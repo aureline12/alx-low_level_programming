@@ -1,29 +1,31 @@
 #include "main.h"
 /**
- * len - function calculates the length of a given string.
- * @dest: pointer to destination.
- * Return: Always 0.
+ * _strncat - concatenates two strings
+ * @dest: input parameter string
+ * @src: input parameter string
+ * @n: times to iterations
+ *
+ * Return: dest
  */
-int len(char *dest)
-{
-	return ((*dest != '\0') ? 1 + len(dest + 1) : 0);
-}
-/**
- * _strncat - Function that concatenates two strings.
- * @dest: the string where we want to append.
- * @src: the string from which ‘n’ characters are going to append.
- * @n:represents maximum number of character to be appended.
- * Return: dest.
- */
-
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
-	const unsigned int log = len(dest);
+	int a;
+	int b;
 
-	for (i = 0; i < n; i++)
+	a = 0;
+
+	while (dest[a] != 0)
 	{
-		*(dest + i + log) = *(src + i);
+		a++;
+	}
+
+	b = 0;
+
+	while (src[b] != 0 && b < n)
+	{
+		dest[a] = src[b];
+		a++;
+		b++;
 	}
 	return (dest);
 }
