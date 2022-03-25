@@ -18,6 +18,7 @@ char *cap_string(char *str);
 char *leet(char *);
 /* t8. rot13 -  function that encodes a string using rot13. */
 char *rot13(char *);
+void print_number(int n);
 
 /* _putchar -  writes a character (an unsigned char) specified by the argument char to stdout. */
 int _putchar(char c);
