@@ -1,3 +1,4 @@
 #!/bin/bash
-#include "main.h"
-ar -rc libmy.a *.o
+gcc -c _putchar.c
+ar rc libmy.a *.o
+ranlib libmy.a
