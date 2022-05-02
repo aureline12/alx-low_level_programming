@@ -23,6 +23,6 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m);
 /* 6. Function that checks the endianness. */
 /* Funcion que replica la funcion de putchar de C. */
 int _putchar(char c);
-
+int get_endianness(void)
 
 #endif
